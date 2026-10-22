@@ -12,21 +12,22 @@
 
 </head>
 <body>
-    <header>
+
+    <!-- Header -->
+    <header >
         <div class="header_content">
             <div class="logo">
             <p>Chetan <span>Prajapati</span></p>
         </div>
         <nav>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Skills</a>
-            <a href="">Project</a>
-            <a href="">Reviews</a>
-            <a href="">Experience</a>
-            <a href="">faq</a>
-            <a href="">Contact</a>
-        </nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Project</a>
+            <a href="#experience">Experience</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+</nav>
         <div class="bars">
             <i class="fa-solid fa-bars"></i>
         </div>
@@ -76,7 +77,9 @@
         </div>
     </header>
 
-    <section class="home_section">
+    <!-- Home Section -->
+
+    <section class="home_section" id="home">
         <div class="home_content">
             <div class="home_left">
                 <span>HELLO, I'M CHETAN</span>
@@ -96,6 +99,8 @@
         </div>
     </section>
 
+    <!-- Animated Counter -->
+
     <section class="counter_section">
 
     <div class="counter_heading">
@@ -108,32 +113,34 @@
 
         <div class="counter_card">
             
-            <h3 class="counter_number" data-target="5">10<span>+</span></h3>
+            <h3 class="counter_number">0<span>+</span></h3>
             <p>Projects Completed</p>
         </div>
 
         <div class="counter_card">
             
-            <h3 class="counter_number" data-target="10">6<span>+</span></h3>
+            <h3 class="counter_number">0<span>+</span></h3>
             <p>Technologies Learned</p>
         </div>
 
         <div class="counter_card">
             
-            <h3 class="counter_number" data-target="15">20<span>+</span></h3>
+            <h3 class="counter_number">0<span>+</span></h3>
             <p>Practice Tasks</p>
         </div>
 
         <div class="counter_card">
             
-            <h3 class="counter_number" data-target="3">9<span>+</span></h3>
+            <h3 class="counter_number">0<span>+</span></h3>
             <p>Learning Areas</p>
         </div>
 
     </div>
 
 </section>
-    <section class="about_section">
+
+<!-- About Section  -->
+    <section class="about_section" id="about" >
         <div class="about_content">
             <div class="about_sec">
                 <div class="getAbout">
@@ -177,8 +184,8 @@
         </div>
     </section>
 
-    
-<section class="education_section">
+    <!-- Education and journey Tab  -->
+<section class="education_section" id="skills" >
 
     <div class="education_heading">
         <span>MY LEARNING JOURNEY</span>
@@ -235,8 +242,10 @@
 
 </section>
 
+    <!-- Projects Slider -->
+
+<section class="project_section" id="projects">
     
-<section class="project_section">
     <div class="projects">
         <span>MY WORK</span>
         <h2>Some Things I've Built.</h2>
@@ -244,127 +253,91 @@
 
     <div class="slider_wrapper">
         <div class="slider_p">
-
             <div class="slider">
-                <div>
-                    <img src="images/baithak.png" alt="The Baithak website">
-                </div>
-
+                <div><img src="images/baithak.png" alt="The Baithak website"></div>
                 <div class="slider_content">
                     <span>FEATURED PROJECT · 01</span>
                     <h3>The Baithak</h3>
-                    <p>A modern café website featuring a menu, gallery and reservation interface.</p>
+                    <p>A modern café website featuring an elegant menu,interactive gallery and reservation interface.</p>
                     <ul>
                         <li>HTML</li>
                         <li>Tailwind CSS</li>
                         <li>JavaScript</li>
                     </ul>
-                    <a href="https://the-baithak.vercel.app/" target="_blank">
-                        <button class="live">Live</button>
+                    <a href="https://the-baithak.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <button class="live">Live Demo ↗</button>
                     </a>
-                    
-<button id="openPopup">View Details</button>
-
-<div class="project_popup" id="projectPopup">
-
-    <div class="popup_content">
-
-        <button id="closePopup" class="popup_close">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-
-        <h2>The Baithak</h2>
-
-        <p>
-            A modern restaurant website built using HTML,
-            CSS and JavaScript.
-        </p>
-
-        <a href="https://the-baithak.vercel.app/"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="live_demo_btn">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            Live Demo
-        </a>
-
-        <a href="https://github.com/chetankumpjpti/The-Baithak"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="github_btn">
-            <i class="fa-brands fa-github"></i>
-            GitHub Code
-        </a>
-
-    </div>
-
-</div>
-
+                    <button id="openPopup">View Details ↗</button>
                 </div>
             </div>
-
+            
             <div class="slider">
-                <div>
-                    <img src="images/shopnest.png" alt="ShopNest website">
-                </div>
-
+                <div><img src="images/shopnest.png" alt="ShopNest e-commerce website"></div>
                 <div class="slider_content">
                     <span>FEATURED PROJECT · 02</span>
                     <h3>ShopNest</h3>
-                    <p>A modern e-commerce website built with a clean layout, product-focused design.</p>
+                    <p>A modern e-commerce website with a clean layout, product-focused design and engaging interactions.</p>
                     <ul>
                         <li>HTML</li>
                         <li>Tailwind CSS</li>
                         <li>JavaScript</li>
                     </ul>
-                    <a href="https://shopnest-nu-six.vercel.app/" target="_blank">
-                        <button class="live">Live</button>
+                    <a href="https://shopnest-nu-six.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <button class="live">Live Demo ↗</button>
                     </a>
                 </div>
             </div>
-
             <div class="slider">
                 <div>
-                    <img src="images/ws.png" alt="WsCube Tech clone">
+                    <img src="images/ws.png" alt="WsCube Tech clone website">
                 </div>
-
                 <div class="slider_content">
                     <span>FEATURED PROJECT · 03</span>
                     <h3>WsCube Tech Clone</h3>
-                    <p>A frontend clone inspired by the WsCube Tech website, recreating its layout and visual style.</p>
+                    <p>A frontend clone inspired by the WsCube Tech website, recreating its layout and visual style.
+                    </p>
                     <ul>
                         <li>HTML</li>
                         <li>Tailwind CSS</li>
                         <li>JavaScript</li>
                     </ul>
-                    <a href="https://ws-cube-tech-clone.vercel.app/" target="_blank">
-                        <button class="live">Live</button>
+                    <a href="https://ws-cube-tech-clone.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <button class="live">Live Demo ↗</button>
                     </a>
-                    
                 </div>
             </div>
-
         </div>
     </div>
 
     <div class="slider_btn">
-        <button id="prev">
+        <button id="prev" aria-label="Previous project">
             <i class="fa-solid fa-arrow-left"></i>
         </button>
-        <button id="next">
+        <button id="next" aria-label="Next project">
             <i class="fa-solid fa-arrow-right-long"></i>
         </button>
     </div>
 
-
+    <div class="project_popup" id="projectPopup">
+        <div class="popup_content">
+            <button id="closePopup" class="popup_close" aria-label="Close popup">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <span>PROJECT DETAILS</span>
+            <h2>The Baithak</h2>
+            <p>A modern café website built with a premium visual style, menu cards, gallery and reservation interface.
+            </p>
+            <a href="https://the-baithak.vercel.app/" target="_blank" rel="noopener noreferrer" class="live_demo_btn"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live Demo</a>
+            <a href="https://github.com/chetankumpjpti/The-Baithak" target="_blank" rel="noopener noreferrer" class="github_btn"><i class="fa-brands fa-github"></i>GitHub Code</a>
+        </div>
+    </div>
 </section>
 
 
 
+<!-- Experience And Training  -->
 
-
-
-<section class="experience_section">
+<section class="experience_section" id="experience">
 
     <div class="experience_heading">
         <h2>Experience & Training.</h2>
@@ -464,8 +437,8 @@
 
 </section>
 
-
-<section class="faq_section">
+<!-- FAQs  -->
+<section class="faq_section" id="faq">
     <div class="faq_heading">
         <h2>Frequently Asked Questions.</h2>
         <p>Some common questions about me, my skills and my work.</p>
@@ -526,8 +499,8 @@
     </div>
 </section>
 
-
-<section class="contact_section">
+<!-- Contact -->
+<section class="contact_section" id="contact">
 
     <div class="contact_heading">
         <span>GET IN TOUCH</span>
@@ -650,7 +623,7 @@
 
 </section>
 
-
+<!-- Footer -->
 <footer class="footer_section">
     <div class="footer_container">
 
@@ -679,7 +652,7 @@
         </div>
 
         <div class="footer_clock">
-            <span>LOCAL TIME</span>
+            <span>CURRENT TIME</span>
             <h3 id="clock_time">00:00:00 AM</h3>
             <p id="clock_date">Loading date...</p>
         </div>

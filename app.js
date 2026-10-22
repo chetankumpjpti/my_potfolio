@@ -10,6 +10,27 @@ MenuClose.addEventListener("click",()=>{
     Menubar_box.style.display = "none"
 })
 
+// Animated Counter
+
+
+const CounterNumber = document.querySelectorAll(".counter_number");
+const target = [10, 6, 20, 9];
+
+for (let i = 0; i < CounterNumber.length; i++) {
+    let count = 0;
+    let interval = setInterval(() => {
+        count++;
+
+        if (count >= target[i]) {
+            count = target[i];
+            clearInterval(interval);
+        }
+
+        CounterNumber[i].innerHTML = count + "<span>+</span>";
+    }, 100);
+}
+
+// Slider
 
 
 const PrevBtn = document.querySelector("#prev");
@@ -44,6 +65,9 @@ NextBtn.addEventListener("click", next);
 PrevBtn.addEventListener("click", prev);
 
 
+
+// FAqs
+
 const Question = document.querySelectorAll(".faq_question")
 for(let title of Question){
     title.addEventListener("click", ()=>{
@@ -60,6 +84,7 @@ for(let title of Question){
 }
 
 
+// Digital clock
 
 function Digital_Clock(){
     let now = new Date();
@@ -85,6 +110,7 @@ setInterval(Digital_Clock,1000)
 
 
 
+// Tab button
 
 const TabBtn = document.querySelectorAll(".tab_btn");
 const TabContent = document.querySelectorAll(".tab_content");
@@ -107,6 +133,8 @@ for (let i = 0; i < TabBtn.length; i++) {
     });
 
 }
+
+// Slider Popup
 
 const OpenPopup = document.querySelector("#openPopup");
 const ClosePopup = document.querySelector("#closePopup");
